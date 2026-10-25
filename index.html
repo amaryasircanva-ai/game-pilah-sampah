@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Pilah Sampah Edukatif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Pilah Sampahmu! 🗑️</h1>
+        <div class="info-bar">
+            <span>Skor: <strong id="skor">0</strong></span>
+            <span>Waktu: <strong id="waktu">30</strong>s</span>
+        </div>
+
+        <!-- Area Munculnya Objek Sampah -->
+        <div id="area-sampah" class="drop-zone-area">
+            <div id="objek-sampah" class="sampah" draggable="true">🍌</div>
+        </div>
+
+        <p class="instruksi">Seret/Geser sampah ke tempat sampah yang sesuai di bawah!</p>
+
+        <!-- Tempat Sampah / Tong Kategori -->
+        <div class="tong-container">
+            <div class="tong" id="tong-organik" data-kategori="organik">
+                <span>🍃</span>
+                <p>Organik</p>
+            </div>
+            <div class="tong" id="tong-anorganik" data-kategori="anorganik">
+                <span>🥤</span>
+                <p>Anorganik</p>
+            </div>
+        </div>
+
+        <button id="btn-mulai" onclick="mulaiGame()">Mulai Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
